@@ -5,6 +5,7 @@ Simple python2 script using bitparking's API to send notification emails via an 
 
 It's extensible, but mail will currently be sent:
 - if your hashrate falls below THRESHOLD
+- if your hashrate climbs back above THRESHOLD after having fallen below it
 - if a block is solved by the pool
 
 To use, configure your bitparking, mining threshold, and email account information by editing the block at the top of the script.  Email is sent from the given address to itself.
