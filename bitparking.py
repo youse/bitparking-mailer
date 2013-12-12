@@ -8,7 +8,7 @@ from datetime import datetime
 
 #  Configuration
 USERNAME=""  # bitparking username
-THRESHOLD = 75000.0     # email if threshold is less than this (GH/s)
+THRESHOLD = 75000.0     # notify if your hashrate is less than this value (GH/s)
 SERVER="smtp.gmail.com" # e.g.
 PORT=587 # e.g.
 EMAIL="" # e.g. your_email@gmail.com
@@ -26,6 +26,7 @@ MESSAGES = {
     'blockfound' : ("Hooray!  Block found! :)","It only took ~{0}.  Good job!"),
     }
 
+# toggle printing mail status with this decorator
 def print_status(fn):
     def fun(self, *args, **kwargs):
         if fn(self, *args, **kwargs):
