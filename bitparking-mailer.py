@@ -109,7 +109,7 @@ BST = BlockSolveTime
 def hash_notify():
     hashrate = get_hashrate()
 
-    print "Hashrate:",hashrate,"GH/s",
+    print "Hashrate:",hashrate,"MH/s",
     if hashrate < THRESHOLD:
         print "[Bad]",
         if os.path.exists(SENTFILE):  # we already sent it
