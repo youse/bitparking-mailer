@@ -8,7 +8,7 @@ from datetime import datetime
 
 #  Configuration
 USERNAME=""  # bitparking username
-THRESHOLD = 75000.0     # notify if your hashrate is less than this value (GH/s)
+THRESHOLD = 75000.0     # notify if your hashrate is less than this value (MH/s)
 SERVER="smtp.gmail.com" # e.g.
 PORT=587 # e.g.
 EMAIL="" # e.g. your_email@gmail.com
